@@ -1,33 +1,104 @@
 <!DOCTYPE html>
 <html lang="vi">
-
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>About - DevOps Lab 1</title>
-<style>
-* { margin: 0; padding: 0; box-sizing: border-box; }
-body { font-family: 'Segoe UI', Tahoma, sans-serif; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); min-height: 100vh; display: flex; justify-content: center; align-items: center; color: #333; }
-.container { background: white; border-radius: 16px; padding: 48px; max-width: 600px; box-shadow: 0 20px 60px rgba(0,0,0,0.3); text-align: center; }
-h1 { color: #667eea; margin-bottom: 16px; }
-p { margin: 10px 0; text-align: left; }
-.nav { margin-bottom: 20px; }
-.nav a { color: #667eea; text-decoration: none; font-weight: bold; margin: 0 10px; }
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - DevOps Lab 1</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #333;
+            padding: 24px;
+        }
+        .container {
+            background: white;
+            border-radius: 16px;
+            padding: 40px 48px;
+            max-width: 650px;
+            width: 100%;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            text-align: center;
+        }
+        h1 { color: #667eea; margin-bottom: 8px; font-size: 32px; }
+        h2 { color: #764ba2; margin-bottom: 20px; font-size: 18px; font-weight: normal; }
+        h3 { color: #667eea; text-align: left; margin: 24px 0 10px; font-size: 18px; }
+        .info { background: #f8f9fa; border-radius: 8px; padding: 20px; margin: 16px 0; text-align: left; }
+        .info p { margin: 8px 0; }
+        .section { text-align: left; line-height: 1.6; }
+        .section p { margin: 8px 0; }
+        .section ul { margin: 8px 0 8px 20px; }
+        .section li { margin: 6px 0; }
+        .badge {
+            display: inline-block;
+            background: #667eea;
+            color: white;
+            padding: 6px 14px;
+            border-radius: 20px;
+            font-size: 14px;
+            margin: 4px;
+        }
+        .badge.light { background: #e9efff; color: #667eea; }
+        .nav { margin-bottom: 20px; }
+        .nav a { color: #667eea; text-decoration: none; font-weight: bold; margin: 0 10px; }
+        .nav a:hover { text-decoration: underline; }
+        .avatar { width: 120px; height: 120px; border-radius: 50%; object-fit: cover; border: 4px solid #667eea; margin-bottom: 16px; }
+        .footer { margin-top: 24px; font-size: 13px; color: #999; }
+    </style>
 </head>
-
 <body>
-<div class="container">
-  <div class="nav">
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="contact.html">Contact</a>
-  </div>
-  <h1>Về tôi</h1>
-  <p><strong>Họ tên:</strong> [Điền tên bạn]</p>
-  <p><strong>MSSV:</strong> [Điền MSSV]</p>
-  <p><strong>Môn học:</strong> Vận hành & Bảo trì Phần mềm - Lab 1 DevOps</p>
-  <p><strong>Kỹ năng:</strong> HTML, CSS, Git, GitHub Actions, CI/CD</p>
-</div>
+    <div class="container">
+        <div class="nav">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </div>
+
+        <img class="avatar" src="avatar.jpg" alt="Avatar của tôi">
+        <h1>Về tôi</h1>
+        <h2>Sinh viên CNTT — Đang học DevOps & Android</h2>
+
+        <div class="info">
+            <p><strong>Họ tên:</strong> Nguyễn Quang Tú</p>
+            <p><strong>MSSV:</strong> DTC235200972</p>
+            <p><strong>Trường:</strong> ICTU — Đại học Công nghệ Thông tin & Truyền thông</p>
+            <p><strong>Môn học:</strong> Vận hành & Bảo trì Phần mềm — Lab 1 DevOps</p>
+        </div>
+
+        <div class="section">
+            <h3> Giới thiệu</h3>
+            <p>Mình là sinh viên CNTT, thích vọc vạch từ code giao diện tới deploy web thật lên mạng. Lab này là lần đầu mình tự tay làm một CI/CD pipeline hoàn chỉnh: push code → GitHub Actions tự build → tự deploy lên GitHub Pages.</p>
+
+            <h3>🛠 Kỹ năng</h3>
+            <div style="text-align:center;">
+                <span class="badge">HTML5</span>
+                <span class="badge">CSS3</span>
+                <span class="badge">Git</span>
+                <span class="badge">GitHub Actions</span>
+                <span class="badge">CI/CD</span>
+                <span class="badge">Java</span>
+                <span class="badge light">Android Studio</span>
+                <span class="badge light">XML Layout</span>
+            </div>
+
+            <h3> Dự án đã làm</h3>
+            <ul>
+                <li><strong>DevOps Lab 1 Portfolio</strong> — Website tĩnh + pipeline GitHub Actions + Lighthouse CI</li>
+                <li><strong>Android cơ bản</strong> — Đang học giao diện XML, Activity, Layout</li>
+            </ul>
+
+            <h3> Mục tiêu</h3>
+            <p>Hiểu và tự làm được vòng đời DevOps: Plan → Code → Build → Test → Deploy → Monitor, và sau đó áp dụng cho app Android của mình.</p>
+        </div>
+
+        <div class="footer">
+            <p>Deployed automatically via GitHub Actions Pipeline</p>
+        </div>
+    </div>
 </body>
 </html>

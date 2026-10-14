@@ -1,26 +1,59 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>About - DevOps Lab 1</title>
-
-<style>
-* { margin: 0; padding: 0; box-sizing: border-box; }
-body { font-family: 'Segoe UI', Tahoma, sans-serif; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); min-height: 100vh; display: flex; justify-content: center; align-items: center; color: #333; }
-.container { background: white; border-radius: 16px; padding: 48px; max-width: 600px; box-shadow: 0 20px 60px rgba(0,0,0,0.3); text-align: center; }
-h1 { color: #667eea; margin-bottom: 16px; }
-p { margin: 10px 0; text-align: left; }
-.nav { margin-bottom: 20px; }
-.nav a { color: #667eea; text-decoration: none; font-weight: bold; margin: 0 10px; }
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - DevOps Lab 1</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #333;
+        }
+        .container {
+            background: white;
+            border-radius: 16px;
+            padding: 48px;
+            max-width: 600px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            text-align: center;
+        }
+        h1 { color: #667eea; margin-bottom: 8px; font-size: 32px; }
+        h2 { color: #764ba2; margin-bottom: 24px; font-size: 18px; font-weight: normal; }
+        .info { background: #f8f9fa; border-radius: 8px; padding: 20px; margin: 16px 0; text-align: left; }
+        .info p { margin: 12px 0; }
+        .info a { color: #667eea; text-decoration: none; }
+        .nav { margin-bottom: 20px; }
+        .nav a { color: #667eea; text-decoration: none; font-weight: bold; margin: 0 10px; }
+        .nav a:hover { text-decoration: underline; }
+        .footer { margin-top: 24px; font-size: 13px; color: #999; }
+    </style>
 </head>
-
 <body>
-	<h1>Liên hệ</h1>
-	<p><strong>Email:</strong> [email của bạn]</p>
-	<p><strong>GitHub:</strong> <a href="https://github.com/7ub0b01">github.com/7ub0b01</a></p>
-	<p><strong>Portfolio:</strong> https://7ub0b01.github.io/devops-lab1-portfolio/</p>
+    <div class="container">
+        <div class="nav">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </div>
 
+        <h1>Liên hệ</h1>
+        <h2>Lab 1 — DevOps Portfolio</h2>
+
+        <div class="info">
+            <p><strong>Email:</strong> dtc235200972@ictu.edu.vn</p>
+            <p><strong>GitHub:</strong> <a href="https://github.com/7ub0b01">github.com/7ub0b01</a></p>
+            <p><strong>Portfolio:</strong> <a href="https://7ub0b01.github.io/devops-lab1-portfolio/">7ub0b01.github.io/devops-lab1-portfolio</a></p>
+        </div>
+
+        <div class="footer">
+            <p>Deployed automatically via GitHub Actions Pipeline</p>
+        </div>
+    </div>
 </body>
 </html>
